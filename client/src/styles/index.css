@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+.header {
+  background-color: #141414;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  color: #fcfcfc;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-family: "Bungee Spice", sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: #e50914;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.3s;
+}
+
+.search-bar button:hover {
+  background: #f40612;
+}
+
+/* Results Section */
+.results-container {
+  padding: 2rem;
+}
+
+.search-results h2,
+.similar-results h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.movie-options,
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.2rem;
+}
+
+.movie-option,
+.movie-card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movie-option:hover,
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.option-poster,
+.movie-poster {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.no-poster,
+.noPoster {
+  width: 100%;
+  height: 240px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.movie-option-info,
+.movie-info {
+  padding: 0.8rem;
+}
+
+.movie-option-info h3,
+.movie-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+.footer {
+  background-image: linear-gradient(to top,
+      rgba(255, 0, 0, 0.699),
+      rgba(255, 255, 0, 0.613));
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.footer-social img {
+  width: 32px;
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(7498%) hue-rotate(357deg) brightness(92%) contrast(119%);
+}
