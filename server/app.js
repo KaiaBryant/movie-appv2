@@ -1,5 +1,9 @@
 const express = require('express') //package 
-const path = require('path')
+const path = require("path");
+app.use(express.static(path.join(__dirname, "../client/dist")));
+app.get("*", (_, res) => {
+    res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+});
 const cors = require('cors')
 
 require('dotenv').config({ path: path.join(__dirname, '.env') });
