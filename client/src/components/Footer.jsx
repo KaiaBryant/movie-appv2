@@ -8,7 +8,6 @@ import "../styles/index.css";
 export default function Footer() {
     return (
         <footer className="footer">
-            <p>Follow us</p>
             <section className="socials">
                 <div className="social-media">
                     <a
