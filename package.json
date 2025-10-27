@@ -4,7 +4,14 @@
   "description": "Welcome to the movie application, where you can input your favorite movies and I will suggest you similar movies!",
   "main": "eslint.config.js",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "postman-request": "^2.88.1-postman.45",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
