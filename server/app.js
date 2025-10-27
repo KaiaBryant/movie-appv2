@@ -13,9 +13,6 @@ const port = process.env.PORT || 3000
 app.use(cors());
 app.use(express.json());
 
-// // creating path to public directory
-// const publicDirectoryPath = path.join(__dirname, '../public')
-// app.use(express.static(publicDirectoryPath))
 
 // API endpoint for movie search that returns movies
 app.get('/search', (req, res) => {
