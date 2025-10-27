@@ -27,9 +27,8 @@ export default function Home() {
 
     return (
         <div className="home">
-            {/* Header with search bar */}
+            {/* Search Section*/}
             <section className="search-section">
-                <h1 className="app-title">RoadFlix</h1>
                 <SearchBar onSearch={handleSearch} />
             </section>
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import MovieCard from "./MovieCard.jsx";
 
-export default function MovieList({ movies }) {
+export default function MovieList({ movies = [] }) {
     const navigate = useNavigate();
 
     const handleClick = (movie) => {

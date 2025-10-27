@@ -1,12 +1,14 @@
 import React from "react";
-import SearchBar from "./SearchBar.jsx";
 import "../styles/index.css";
+import { Link } from "react-router-dom";
 
 export default function Header({ onSearch }) {
     return (
         <header className="header">
-            <h1 className="bungee-spice-regular">RoadFlix</h1>
-            <SearchBar onSearch={onSearch} />
+            <Link to="/" className="logo-link">
+                <h1 className="bungee-spice-regular">RoadFlix</h1>
+            </Link>
+            {/* <SearchBar onSearch={onSearch} /> */}
         </header>
     );
 }
