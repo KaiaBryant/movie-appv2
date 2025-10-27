@@ -56,7 +56,7 @@ app.get("/movies/:movieId/similar", (req, res) => {
 const clientBuildPath = path.join(__dirname, "../client/dist");
 app.use(express.static(clientBuildPath));
 
-app.get("/*", (_, res) => {
+app.get(/.*/, (_, res) => {
     res.sendFile(path.join(clientBuildPath, "index.html"));
 });
 
